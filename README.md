@@ -75,7 +75,7 @@ Ideal para portfólio júnior/fullstack ou como base para aplicações com login
 ```
 
 Estrutura do projeto
-```json
+```
 src/
 ├── controllers/          # Lógica dos endpoints
 │   ├── authController.ts
