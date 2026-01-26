@@ -75,6 +75,7 @@ Ideal para portfólio júnior/fullstack ou como base para aplicações com login
 ```
 
 Estrutura do projeto
+``
 src/
 ├── controllers/          # Lógica dos endpoints
 │   ├── authController.ts
@@ -92,3 +93,4 @@ src/
 prisma/
 ├── schema.prisma         # Definição do modelo do banco
 └── dev.db                # Banco SQLite local (não commitado)
+``
