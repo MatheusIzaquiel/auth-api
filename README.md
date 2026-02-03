@@ -23,7 +23,7 @@ Ideal para portfólio júnior/fullstack ou como base para aplicações com login
 - Verificação de token em rotas protegidas
 - Senhas armazenadas com hash seguro (bcrypt)
 - Banco de dados local com SQLite (fácil de rodar e testar)
-- Funcionalidades são acessadas por um front-end https://github.com/MatheusIzaquiel/Formulario-FullStack
+- Rotas são acessadas por um front-end https://github.com/MatheusIzaquiel/Formulario-FullStack
 
 
 ## Rotas da API
