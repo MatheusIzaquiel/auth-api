@@ -67,7 +67,7 @@ export const login = async (req: Request<LoginRequest>, res: Response) => {
 
   const user = await prisma.user.findUnique({ where: { email } });
   if (!user) {
-    return res.status(401).json({ message: "Credenciais inválidas" });
+    return res.status(401).json({ message: "Email inválido" });
   }
 
   const isMatch = await bcrypt.compare(password, user.password);
@@ -95,18 +95,3 @@ export const login = async (req: Request<LoginRequest>, res: Response) => {
   }
 };
 
-export const getUsers = async (req: Request, res: Response) => {
-  try {
-    const users = await prisma.user.findMany({
-      select: {
-        id: true,
-        name: true,
-        email: true,
-        // password: true,  // A senha não deve ser retornada por questões de segurança por mais que esteja hasheada
-      },
-    });
-    res.status(200).json({users});
-  } catch (error) {
-    return res.status(500).json({ message: "Erro interno no servidor" });
-  }
-};
